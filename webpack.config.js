@@ -18,7 +18,7 @@ module.exports = {
      			loader: 'babel' //在webpack的module部分的loaders里进行配置即可
      		},{
      			test: /\.css$/,
-     			loader: 'style!css' //添加对样式表的处理
+     			loader: 'style!css?modules' //跟前面相比就在后面加上了?modules
      		}
      	]
      },
