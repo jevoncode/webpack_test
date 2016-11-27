@@ -11,6 +11,11 @@ module.exports = {
      		{
      			test: /\.json$/,
      			loader: "json"
+     		},
+     		{
+     			test: /\.js$/,
+     			exclude: /node_modules/,
+     			loader: 'babel' //在webpack的module部分的loaders里进行配置即可
      		}
      	]
      },

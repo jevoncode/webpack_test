@@ -1,8 +1,14 @@
-var config = require('./config.json');
+import React, {Component} from 'react'
+import config from './config.json';
 
-module.exports = function(){
-	var greet = document.createElement('div');
-	// greet.textContent = "分工是效率的开始！亚当斯密";
-	greet.textContent = config.greetText;
-	return greet;
+class Greeter extends Component{
+	render(){
+		return(
+			<div>
+				{config.greetText}
+			</div>
+			);
+	}
 }
+
+export default Greeter
